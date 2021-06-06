@@ -1,0 +1,84 @@
+{
+  "tests": [
+    {
+      "name": "Launch CountActivity",
+      "setup": "sh .github/scripts/setup_emulators.sh",
+      "run": "./gradlew app:connectedAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=app.nickname.myoji.bughouse.CountActivityLaunchTest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 15,
+      "points": 10
+    },
+    {
+      "name": "Change FontSize in CountActivity",
+      "setup": "sh .github/scripts/setup_emulators.sh",
+      "run": "./gradlew app:connectedAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=app.nickname.myoji.bughouse.CountActivityChangeFontSizeTest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 15,
+      "points": 5
+    },
+    {
+      "name": "Launch SaveActivity",
+      "setup": "sh .github/scripts/setup_emulators.sh",
+      "run": "./gradlew app:connectedAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=app.nickname.myoji.bughouse.SaveActivityLaunchTest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 15,
+      "points": 10
+    },
+    {
+      "name": "Launch LoadActivity",
+      "setup": "sh .github/scripts/setup_emulators.sh",
+      "run": "./gradlew app:connectedAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=app.nickname.myoji.bughouse.LoadActivityLaunchTest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 15,
+      "points": 10
+    },
+    {
+      "name": "Save and Load text",
+      "setup": "sh .github/scripts/setup_emulators.sh",
+      "run": "./gradlew app:connectedAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=app.nickname.myoji.bughouse.LoadActivityShowSavedTextTest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 15,
+      "points": 15
+    },
+    {
+      "name": "Launch ListActivity",
+      "setup": "sh .github/scripts/setup_emulators.sh",
+      "run": "./gradlew app:connectedAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=app.nickname.myoji.bughouse.ListActivityLaunchTest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 15,
+      "points": 10
+    },
+    {
+      "name": "Launch DetailActivity",
+      "setup": "sh .github/scripts/setup_emulators.sh",
+      "run": "./gradlew app:connectedAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=app.nickname.myoji.bughouse.DetailActivityLaunchTest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 15,
+      "points": 15
+    },
+    {
+      "name": "Add item in ListActivity",
+      "setup": "sh .github/scripts/setup_emulators.sh",
+      "run": "./gradlew app:connectedAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=app.nickname.myoji.bughouse.ListActivityAddItemTest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 15,
+      "points": 25
+    }
+  ]
+}
